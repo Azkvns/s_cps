@@ -1,0 +1,61 @@
+.srv-link {
+    display: flex;
+    align-items: center;
+    font-size: 0;
+    position: relative;
+    background-color: #fff;
+    padding: 0 16px;
+    box-sizing: border-box;
+    height: 72px;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    cursor: pointer;
+    outline: none;
+    transition: all 100ms ease-in;
+    width: 240px;
+    // 
+    @media (min-width: $screen-md) {
+        width: 224px;
+    }
+    @media (min-width: $screen-lg) {
+        width: 240px;
+    }
+    // 
+    &:focus {
+        border-color: #ff3e79;
+    }
+    &:hover {
+        border-color: #ff3e79;
+        box-shadow: 0 0 4px 4px #80808044;
+        // 
+        .srv-link__button {
+            transform: scale(1.2);
+        }
+    }
+    &:active {
+        box-shadow: 0 0 6px 4px #80808088;
+        .srv-link__button {
+            background-image: url("../img/go-fill.svg");
+        }
+    }
+    //
+    &__button {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        bottom: 16px;
+        right: 16px;
+        background: url("../img/go.svg") no-repeat 50%;
+        transition: all 100ms ease-out;
+        font-size: 0;
+        align-self: flex-end;
+    }
+    &--tall {
+        font-size: 16px;
+        text-decoration: none;
+        color: #000000;
+        min-height: 160px;
+        align-items: flex-start;
+        padding: 16px;
+    }
+}

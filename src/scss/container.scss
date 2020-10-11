@@ -1,0 +1,26 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $background-container;
+    max-width: $screen-xl;
+    position: relative;
+    @media (min-width: $screen-lg) {
+        display: flex;
+        align-items: stretch;
+    }
+    // 
+    &__inner {
+        position: relative;
+        transition: filter 500ms ease-in-out;
+        // 
+        @media (min-width: $screen-lg) {
+            padding-top: 40px;
+            max-width: 1120px;
+            overflow: hidden;
+        }
+        // 
+        &--lightening {
+            @include lightening;
+        }
+    }
+}

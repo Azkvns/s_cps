@@ -1,0 +1,42 @@
+.offer {
+    padding: 0 16px;
+    max-width: 420px;
+    @media (min-width: $screen-md) {
+        padding: 0 24px;
+    }
+    @media (min-width: $screen-lg) {
+        padding: 0 32px;
+    }
+    // 
+    &__text {
+        display: block;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 300;
+        letter-spacing: 0.2px;
+        color: #1B1C21;
+    }
+    &__link {
+        display: inline-block;
+        position: relative;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        font-weight: 500;
+        color: #1B1C21;
+        text-decoration: none;
+        // 
+        &:hover {
+            text-decoration: underline;
+        }
+        // 
+        .offer__button {
+            display: inline-block;
+            width: 24px;
+            height: 27px;
+            vertical-align: middle;
+            font-size: 0;
+            background-image: url("../img/more.svg");
+        }
+    }
+}
